@@ -5,31 +5,17 @@
         "homepage": "https://github.com/Jebbs/dsfmlc-win-x64",
         "version":"2.4.0",
         "license": "Zlib",
-        "subPackages":
+         "subPackages":
         [
+                {
+                        "name": "system",
+                        "targetType": "none",
+                        "libs": ["dsfmlc-system"]
+                },
                 {
                         "name": "audio",
                         "targetType": "none",
-                        "lflags-windows-x86_64-dmd":"",
-                        "dependencies":
-                        {
-                                "dsfmlc-win-x64:system": "~>2.4"
-                        }
-                },
-                {
-                        "name": "graphics",
-                        "targetType": "none",
-                        "libs": [ "dsfmlc-graphics" ],
-                        "dependencies":
-                        {
-                                "dsfmlc-win-x64:system": "~>2.4",
-                                "dsfmlc-win-x64:window": "~>2.4"
-                        }
-                },
-                {
-                        "name": "window",
-                        "targetType": "none",
-                        "libs": [ "dsfmlc-window" ],
+                        "libs": ["dsfmlc-audio"],
                         "dependencies":
                         {
                                 "dsfmlc-win-x64:system": "~>2.4"
@@ -45,9 +31,26 @@
                         }
                 },
                 {
-                        "name": "system",
+                        "name": "window",
                         "targetType": "none",
-                        "libs": ["dsfmlc-system"]
+                        "libs": [ "dsfmlc-window" ],
+                        "dependencies":
+                        {
+                                "dsfmlc-win-x64:system": "~>2.4"
+                        }
+                },
+                {
+                        "name": "graphics",
+                        "targetType": "none",
+                        "libs": ["dsfmlc-graphics"],
+                        "dependencies":
+                        {
+                                "dsfmlc-win-x64:system": "~>2.4",
+                                "dsfmlc-win-x64:window": "~>2.4"
+                        }
                 }
+
         ]
+
+
 }
