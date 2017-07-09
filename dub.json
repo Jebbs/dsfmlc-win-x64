@@ -3,7 +3,7 @@
         "description": "The Win64 version of the dsfmlc libraries.",
         "authors": ["Jeremy DeHaan"],
         "homepage": "https://github.com/Jebbs/dsfmlc-win-x64",
-        "version":"2.4.0",
+        "version":"2.4.0-alpha.1",
         "license": "Zlib",
          "subPackages":
         [
@@ -18,7 +18,7 @@
                         "libs": ["dsfmlc-audio"],
                         "dependencies":
                         {
-                                "dsfmlc-win-x64:system": "~>2.4"
+                                "dsfmlc-win-x64:system": "==2.4.0-alpha.1"
                         }
                 },
                 {
@@ -27,7 +27,7 @@
                         "libs": [ "dsfmlc-network" ],
                         "dependencies":
                         {
-                                "dsfmlc-win-x64:system": "~>2.4"
+                                "dsfmlc-win-x64:system": "==2.4.0-alpha.1"
                         }
                 },
                 {
@@ -36,7 +36,7 @@
                         "libs": [ "dsfmlc-window" ],
                         "dependencies":
                         {
-                                "dsfmlc-win-x64:system": "~>2.4"
+                                "dsfmlc-win-x64:system": "==2.4.0-alpha.1"
                         }
                 },
                 {
@@ -45,8 +45,8 @@
                         "libs": ["dsfmlc-graphics"],
                         "dependencies":
                         {
-                                "dsfmlc-win-x64:system": "~>2.4",
-                                "dsfmlc-win-x64:window": "~>2.4"
+                                "dsfmlc-win-x64:system": "==2.4.0-alpha.1",
+                                "dsfmlc-win-x64:window": "==2.4.0-alpha.1"
                         }
                 }
 
